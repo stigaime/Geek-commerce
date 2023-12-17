@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body class="bg-black">
-  <header class="pb-5">
-    <nav class="navbar navbar-expand-lg bg-purple p-0">
+  <header class="pb-4">
+    <nav class="navbar navbar-expand-lg  bg-purple p-0">    <!-- fixed-top -->
         <div class="container-fluid">
           <a class="navbar-brand gold-color" href="#">GEEK Commerce</a>
           <div class="row col-6 justify-content-end">
@@ -25,10 +29,10 @@
               <li class="nav-item">
                 <a class="nav-link  gold-color" href="#">Features</a>
               </li>
-
+              <li>
+                <a class="nav-link gold-color" href="contact.html">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link   gold-color" >Disabled</a>
+
               </li>
             </ul>
           </div>
@@ -38,23 +42,100 @@
 
   <main>
 
+<!-- ///////////////////////
+   /////////////////////////CAROUSEL
+  ////////////////////////// -->
 <div class="container">
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../img/pc.jpg" class="d-block col-12" alt="...">
+      <div class="carousel-item img-carousel active">
+        <img src="../img/nintendoSwitch.jpg" class="d-block w-100 " alt="" href="#nintendo">
+        <div class="carousel-caption gold-color d-none d-md-block">
+          <a class="gold-color" href="#nintendo">
+            <h5>Nintendo Switch</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            
+          </a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="../img/Playstation5.jpg" class="d-block col-12" alt="...">
+      <div class="carousel-item img-carousel">
+        <img src="../img/ps5.webp" class="d-block w-100 " alt="...">
+        <div class="carousel-caption d-none gold-color d-md-block">
+          <a class="gold-color" href="#ps5">
+            <h5>Playstation 5</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+
+          </a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="../img/XboxSeriesX.jpg" class="d-block col-12" alt="...">
+      <div class="carousel-item img-carousel">
+        <img src="../img/XboxSeriesX.png" class="d-block w-100 " alt="...">
+        <div class="carousel-caption d-none gold-color d-md-block">
+          <a class="gold-color" href="#xbox">
+            <h5>Xbox Series S and Series X</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+
+          </a>
+        </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
 </div>
+<!-- 
+/////////////////////
+///////////////////// IMAGE HOVER EFFECT
+//////////////////////
+ -->
+<div class=" pt-3 w-100 justify-content-center">
+  <div class="d-flex justify-content-center text-light" id="ps5">
+    <h2>Jeux en vogue - Playstation 5</h2>
 
+  </div>
+  <div class="d-flex justify-content-center col-12">
+<figure class="imageHoverEffect">
+  <img src="../img/TLOU2.jpg" alt="sample89" />
+  <figcaption>
+    <h3> Elden Ring </h3>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="imageHoverEffect ">
+  <img src="../img/TLOU2.jpg" alt="sample94" />
+  <figcaption>
+    <h3>TLOU Part 2 - Remastered</h3>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="imageHoverEffect">
+  <img src="../img/hogwarts.webp" alt="sample92" />
+  <figcaption>
+    <h3>hogwarts Legacy</h3>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+  </div>
+</div>
+  
+
+
+<!-- 
+<h2>Steve Jobs - How to Live before You Die</h2>
+<p>At his Stanford University commencement speech, Steve Jobs, CEO and co-founder of Apple and Pixar, urges us to pursue our dreams and see the opportunities in life's setbacks - including death itself.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mi3dMtdXmzI?si=gSeSPctcczVsMMsd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
   </main>
 
