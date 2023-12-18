@@ -6,8 +6,4 @@ $(".hover").mouseleave(
   );
 
 
-  $("nav").scroll(
-    function(){
-        
-    }
-  )
+ 
